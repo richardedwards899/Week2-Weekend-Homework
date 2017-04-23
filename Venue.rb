@@ -1,5 +1,3 @@
-# require_relative('Guest.rb')
-
 class Venue
 
   attr_reader :capacity, :entrance_fee, :rooms, :all_guests, :guests_not_in_rooms, :entrance_fees
@@ -27,7 +25,7 @@ class Venue
 
   def add_guest_to_room(guest, room)
     @guests_not_in_rooms.delete(guest) if room.guests.count < room.capacity
-    return room.enter(guest) 
+    return room.enter(guest)
   end
 
   def drinks_takings

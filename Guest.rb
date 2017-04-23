@@ -32,6 +32,7 @@ class Guest
   def pay_money(venue, payment)
     @money -= payment
     venue.entrance_fees += payment
+    @spent += payment
   end
 
 end

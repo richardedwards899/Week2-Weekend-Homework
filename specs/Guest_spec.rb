@@ -92,5 +92,6 @@ class TestGuest < MiniTest::Test
 
     assert_equal(25, @guest1.money)
     assert_equal(5, @venue.entrance_fees)
+    assert_equal(5, @guest1.spent)
   end
 end
